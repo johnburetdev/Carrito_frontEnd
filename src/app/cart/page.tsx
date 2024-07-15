@@ -19,14 +19,14 @@ const Cart = () => {
     <div className="space-y-8 mb-5">
       <PageHeader tittle="Sneaker cart" />
       <Table>
-        <Table.Head>
-          <Table.HeadCell>Product name</Table.HeadCell>
+        <Table.Head className="text-left">
+          <Table.HeadCell className="pl-2">Product name</Table.HeadCell>
           <Table.HeadCell> </Table.HeadCell>
         </Table.Head>
         <Table.Body>
           {cartProducts.map((product) => (
             <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-              <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+              <TableCell className=" pl-2 whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 {product.Marca} {product.modelo}
               </TableCell>
               <TableCell>
